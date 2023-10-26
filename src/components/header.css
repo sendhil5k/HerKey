@@ -1,0 +1,31 @@
+.hd-rt-img{border-radius: 50%; width: 34px; height: 34px;    margin-right: 22px;}
+.navigation{height:70px;padding-top: 18px;}
+.navigation-menu {
+   /* margin-left: auto;*/
+   font-weight: normal;
+   padding-top: 10px;
+  }
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  .navigation-menu li {
+    /*removes default disc bullet for li tags and applies margin to left & right side */
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  .navigation-menu li a {
+    /* increases the surface area of the anchor tag to span more than just the anchor text */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color:#000;
+  }
+  .navigation-menu li a:hover{
+    color:#363239; text-decoration: underline;
+  }
+  .hd-r-panel{float: right;margin-top: -20px;}
+  .breadcrumbs{height: 48px; padding-left: 24px; display: flex; align-items: center;
+    color:#999999; font-size: 12px;}
+  .link-style{color:#2680EB}
+  .jfg-log-big{padding-left:14px;float: left; width:270px;}

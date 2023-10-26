@@ -1,0 +1,123 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  padding-top: 27px;
+  width: 270px;
+  background-color: #404040;
+ 
+}
+.sidebar.expanded{display: none;}
+.sidebar__menu_icon{    position: absolute;
+  top: 2.5rem;
+  left: 14rem;}
+/* .sidebar__logo {
+display: grid;
+  place-items: center;
+  height: 71px;
+  background:#fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Mochiy Pop P one', sans-serif;
+}*/
+.sidebar__menu {
+  position: relative;
+}
+.sidebar__menu__item {
+  display: flex;
+  align-items: center;
+  place-content: flex-start;
+  padding: .5rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #B2B2B2;
+  transition: color 0.3s ease-in-out;
+}
+.sidebar__menu__item.active {
+  color: #99CA3B;
+  border-left: 6px solid #99CA3B;
+  padding-left: 1.5rem;
+}
+.sidebar__menu__item__icon {
+  margin-right: 1rem;
+}
+.sidebar__menu__item__icon i {
+  font-size: 1.75rem;
+}
+.sidebar__menu__indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(100% - 0px);
+  border-radius: 0;
+  border-left: 10px solid #99CA3B;
+  background-color: #313136;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+}
+.contactus{color:#99CA3B; font-size:12px;margin-left:1.8rem; margin-top:20px;}
+.hamburger {
+  /* removes default border on button element */
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  /* positions the icon to the right and center aligns it vertically */
+  position: relative;
+
+  transform: translateY(-50%);
+  display: block;
+}
+.hamburger:hover {
+  background-color: #f8f8f8;
+}
+.sm-log{
+  border-radius: 50%;
+  width: 4rem;
+    margin-right: 9px;
+  
+}
+.client_logo{    margin-left: 17px;margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;}
+.client_logo span{font-size: 40px;
+    color: #fff;}
+.client_logo p{color:#fff; font-size: 22px;}
+
+.icon-dashboard{ background: url('../../images/dashboard.png') no-repeat center center;}
+.xm-show{display: block;}
+.sm-show{display: none;}
+/* responsive */
+@media screen and (max-width: 699px) {
+
+  .xm-show{display: none;}
+.sm-show{display: block;}
+  .hamburger {
+    display: block;
+   
+  }
+  .sidebar{
+    display: none;
+  }
+  .sidebar.expanded {
+    display: block;
+  }
+  .navigation-menu{display: none;}
+  .jfg-log-big{    width: 270px;
+    left: 37%;
+    position: absolute;
+    float: none;
+    padding: 0;}
+    .sidebar__menu_icon{    position: absolute;
+      left: 1rem;}
+
+      .hd-r-panel{margin-top: 0px;}
+      .client_logo span {
+        font-size: 2rem;
+      }
+}
